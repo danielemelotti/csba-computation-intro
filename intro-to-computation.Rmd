@@ -1,0 +1,29 @@
+---
+title: "intro-to-computation"
+author: "Daniele Melotti"
+date: "2023-11-02"
+output: pdf_document
+---
+
+We import a dataset containing 1 variable, which is the age of a set of hypothetical customers, and move the ages into a numeric vector called _age_.
+
+```{r setup, include=FALSE}
+# Loading data
+dataset <- read.table("data/customers.txt", header = TRUE, colClasses = "numeric")
+ages <- dataset$age
+```
+
+Then, we conduct a brief exploratory analysis; for instance, we want to determine how many customers (or ages of customers) are present within our data.
+
+```{r}
+length(ages)
+```
+
+Now we know that there are 399 customers in total. Next, we check what is the age of certain elements of the vector; for instance, the 1st, 5th and 100th element of _age_.
+
+```{r}
+ages[c(1, 5, 100)]
+```
+
+We see that the the 1st, 5th and 100th are _49_, _45_, and _34_ years old respectively.
+
