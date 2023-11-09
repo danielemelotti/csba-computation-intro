@@ -15,7 +15,7 @@ dataset <- read.table("data/customers.txt", header = TRUE, colClasses = "numeric
 ages <- dataset$age
 ```
 
-Then, we conduct a brief exploratory analysis; for instance, we want to determine how many customers (or ages of customers) are present within our data.
+Then, we want to determine how many customers (or ages of customers) are present within our data.
 
 ```{r}
 length(ages)
@@ -27,7 +27,18 @@ Now we know that there are 399 customers in total. Next, we check what is the ag
 ages[c(1, 5, 100)]
 ```
 
-We see that the the 1st, 5th and 100th are _49_, _45_, and _34_ years old respectively. Next, we sort the ages into ascending order. We can take a peek into the five lowest ages:
+We see that the the 1st, 5th and 100th are _49_, _45_, and _34_ years old respectively. Now, we are interested in finding the age of the youngest and oldest customer.
+
+```{r}
+min(ages)
+max(ages)
+```
+
+We can see that the youngest and oldest customers present in the dataset are aged _18_ and _85_ respectively.
+
+# 2. Sorting and High-Level Analysis
+
+We sort the ages into ascending order. We can take a peek into the five lowest ages:
 
 ```{r}
 sorted_ages <- sort(ages)
@@ -40,11 +51,29 @@ As we can see, there is only one customer aged 18, while there are at least four
 head(unique(sorted_ages), n = 5)
 ```
 
-Hence, we know that the 5 smallest ages are _18_, _19_, _20_, _21_ and _22_. As for the highest 5 ages, they are:
+Hence, we know that the 5 smallest ages are _18_, _19_, _20_, _21_ and _22_. We repeat the process for the 5 highest ages:
 
 ```{r}
 tail(unique(sorted_ages), n = 5)
 ```
+
+Next, we compute a statistic of central tendency, the mean:
+
+```{r}
+mean(ages)
+```
+
+The average age of the customers is 46.807, close to 47. As for the standard deviation:
+
+```{r}
+sd(ages)
+```
+
+As we can see, the standard deviation is 16.3698, which is roughly a third of the mean.
+
+# 3. Analysis of Differences
+
+# 4. Visualization
 
 We see that the 5 highest ages are _80_, _81_, _82_, _83_ and _85_. In order to get a more holistic view on the distribution of _ages_, we can plot a histogram.
 
