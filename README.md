@@ -18,6 +18,8 @@ This project is the first of a series on Computational Statistics in Business An
 * Analyze the average difference between each age and the mean. Reflect on its significance in data analysis.
 
 ## 4. Visualization
+* Create a histogram representing the age distribution.
+* Plot a density graph to showcase the age density.
+* Combine a boxplot and a stripchart for a holistic view of the data.
 
-
-# Reflections
+See the end of the markdown file for a summary. Feel free to knit the file and generate a report. Thank you!
