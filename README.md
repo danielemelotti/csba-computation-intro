@@ -1,6 +1,9 @@
 # Objective
 This project is the first of a series on Computational Statistics in Business Analytics (CSBA). It focuses on fundamental data exploration techniques using R, centered around a dataset of ages. The goal is to understand the distribution, central tendencies, variability, and visual representations of age data.
 
+# Dataset
+The dataset contains data related to the age of a group of customers. The age constitutes the only variable of the dataset.
+
 # Tasks
 ## 1. Retrieve Data Points
 * Find the total number of customers contained in the dataset.
