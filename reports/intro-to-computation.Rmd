@@ -1,16 +1,14 @@
 ---
-title: "intro-to-computation"
+title: "Computational Statistics in Business Analytics - Introduction to Computation"
 author: "Daniele Melotti"
-date: "2023-11-02"
 output: pdf_document
 ---
 
 # 1. Retrieve Data Points
 
 We import a dataset containing 1 variable, which is the age of a set of customers, and move the ages into a vector called _ages_.
-```{r setup, include=FALSE}
-# Loading data
-dataset <- read.table("data/customers.txt", header = TRUE, colClasses = "numeric")
+```{r setup}
+dataset <- read.table(file = "../data/customers.txt", header = TRUE, colClasses = "numeric")
 ages <- dataset$age
 ```
 
