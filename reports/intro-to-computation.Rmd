@@ -1,6 +1,7 @@
 ---
 title: "Computational Statistics in Business Analytics - Introduction to Computation"
 author: "Daniele Melotti"
+date: "Nov 2023"
 output: pdf_document
 ---
 
