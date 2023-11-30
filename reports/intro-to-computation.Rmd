@@ -91,7 +91,7 @@ plot(density(ages), main = "Customer Ages Histogram", xlab = "Age", ylab = "Dens
 ```
 
 We can see that the shape of the density plot resembles the histogram. Finally, we show a boxplot with a stripchart:
-```{r}
+```{r, fig.align = 'center'}
 boxplot(ages, main = "Boxplot + Stripchart", horizontal = TRUE,
         xlab = "Age", ylab = "", col = "cornflowerblue")
 stripchart(ages, method = "stack", add = TRUE, col = "darkblue", bg = "lightblue", at = 0.6)
