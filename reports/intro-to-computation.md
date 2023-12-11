@@ -4,6 +4,8 @@ Computation
 
 **Author:** Daniele Melotti<br> **Date:** Nov 2023
 
+*See README for info about data and list of tasks*.
+
 # 1. Retrieve Data Points
 
 We import a dataset containing 1 variable, which is the age of a set of
