@@ -1,9 +1,10 @@
 ---
 title: "Computational Statistics in Business Analytics - Introduction to Computation"
-author: "Daniele Melotti"
-date: "Nov 2023"
-output: pdf_document
+output: github_document
 ---
+
+**Author:** Daniele Melotti<br>
+**Date:** Nov 2023
 
 # 1. Retrieve Data Points
 
@@ -80,18 +81,18 @@ The result is a _zero_. Why is that? Usually, the mean of differences is zero be
 # 4. Visualization
 
 In order to get a better view of how the values of _ages_ are distributed, we can plot a histogram.
-```{r}
+```{r hist, fig.align = 'center'}
 hist(ages, main = "Customer Ages Histogram", xlab = "Age", ylab = "Frequency", breaks = 35, col = "cornflowerblue")
 ```
 
 The histogram allows us to see that there is a relatively large number of customers aged between _48_ and _50_. Generally, customers aged between _44_ and _50_ are more largely present in the dataset compared to other ages. We can also draw a density plot of _ages_:
-```{r}
+```{r density, fig.align = 'center'}
 plot(density(ages), main = "Customer Ages Histogram", xlab = "Age", ylab = "Density",
      col = "cornflowerblue", lwd = 2)
 ```
 
 We can see that the shape of the density plot resembles the histogram. Finally, we show a boxplot with a stripchart:
-```{r, fig.align = 'center'}
+```{r box + strip, fig.align = 'center'}
 boxplot(ages, main = "Boxplot + Stripchart", horizontal = TRUE,
         xlab = "Age", ylab = "", col = "cornflowerblue")
 stripchart(ages, method = "stack", add = TRUE, col = "darkblue", bg = "lightblue", at = 0.6)
